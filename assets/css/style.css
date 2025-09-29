@@ -82,6 +82,9 @@ main {
    Mobile adjustments
    ========================= */
 @media (max-width: 768px) {
+  body {
+    background: pink !important;
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -96,8 +99,6 @@ main {
   main {
     padding: 1rem;
   }
-  body {
-  background: pink !important;
-}
+  
 
 }
