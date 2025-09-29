@@ -97,7 +97,7 @@ main {
     padding: 1rem;
   }
   body {
-  background: pink;
+  background: pink !important;
 }
 
 }
