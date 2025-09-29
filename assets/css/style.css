@@ -74,6 +74,15 @@
   text-decoration: underline;
 }
 
+
+.tab-content {
+  display: none; /* hide all by default */
+}
+
+.tab-content.active {
+  display: block; /* show only the active tab */
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .header {
