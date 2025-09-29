@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">My Portfolio</h1>
+    <nav class="navbar">
+      <ul>
+        <li><button class="tab-link active" data-tab="about">About</button></li>
+        <li><button class="tab-link" data-tab="education">Education</button></li>
+        <li><button class="tab-link" data-tab="research">Research</button></li>
+        <li><button class="tab-link" data-tab="projects">Projects</button></li>
+        <li><button class="tab-link" data-tab="skills">Skills</button></li>
+        <li><button class="tab-link" data-tab="contact">Contact</button></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about" class="tab-content active">
+      <h2>About Me</h2>
+      <p>Short bio, research interests, and introduction here.</p>
+    </section>
+
+    <section id="education" class="tab-content">
+      <h2>Education</h2>
+      <ul>
+        <li>PhD/MSc in Machine Learning – University XYZ (20XX–20XX)</li>
+        <li>Bachelor’s Degree – University ABC (20XX–20XX)</li>
+      </ul>
+    </section>
+
+    <section id="research" class="tab-content">
+      <h2>Research & Publications</h2>
+      <p>List of papers, arXiv links, citations, posters.</p>
+    </section>
+
+    <section id="projects" class="tab-content">
+      <h2>Projects</h2>
+      <p>Highlight GitHub repos, Kaggle work, HuggingFace Spaces, demos.</p>
+    </section>
+
+    <section id="skills" class="tab-content">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, PyTorch, TensorFlow</li>
+        <li>Transformers, WavLM, CLAP</li>
+        <li>Data Processing, Visualization</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="tab-content">
+      <h2>Contact</h2>
+      <p>Email: yourname@email.com</p>
+      <p>LinkedIn | GitHub | Google Scholar</p>
+    </section>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
