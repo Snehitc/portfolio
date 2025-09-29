@@ -16,6 +16,33 @@
   display: block; /* show only active tab */
 }
 
+.navbar ul {
+  display: flex;
+  flex-direction: row; /* horizontal tabs */
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: auto; /* pushes to right */
+  z-index: 10;
+}
+
+/* Header flex layout */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
 /* Hero container: desktop layout */
 .hero-container {
   display: flex;
@@ -88,17 +115,21 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+  /* Header flex layout */
   .header {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .navbar ul {
+    flex-direction: column; /* optional if you want vertical wrap on mobile */
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 0.5rem 0;
   }
-
+  
   main {
     padding: 1rem;
   }
