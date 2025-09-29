@@ -7,14 +7,24 @@
   margin: 1rem auto;
 }
 
+/* Correct tab-content behavior */
+.tab-content {
+  display: none; /* hide all by default */
+}
+
+.tab-content.active {
+  display: block; /* show only active tab */
+}
+
 /* Hero container: desktop layout */
 .hero-container {
   display: flex;
   align-items: center;
   gap: 2rem;
-  justify-content: center;
+  justify-content: flex-start; /* left-align text on desktop */
   padding: 2rem 1rem;
 }
+
 
 /* Profile pic smaller */
 .hero-container .profile-pic {
@@ -75,13 +85,6 @@
 }
 
 
-.tab-content {
-  display: none; /* hide all by default */
-}
-
-.tab-content.active {
-  display: block; /* show only the active tab */
-}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
@@ -102,6 +105,7 @@
   .hero-container {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
   }
   
   .project-cards {
