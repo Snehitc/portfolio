@@ -82,9 +82,6 @@ main {
    Mobile adjustments
    ========================= */
 @media (max-width: 768px) {
-  body {
-    background: pink !important;
-  }
   .header {
     flex-direction: column;
     align-items: flex-start;
