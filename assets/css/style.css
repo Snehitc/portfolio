@@ -17,7 +17,7 @@
 }
 
 .navbar ul {
-  display: flex;
+  display: none;
   flex-direction: row; /* horizontal tabs */
   list-style: none;
   gap: 1rem;
