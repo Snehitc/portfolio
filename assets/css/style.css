@@ -98,8 +98,8 @@ main {
 
 /* Smaller profile pic inside hero */
 .hero-container .profile-pic {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
 }
 
 /* Hero text */
@@ -147,7 +147,12 @@ main {
     flex-direction: column;
     text-align: center;
   }
-
+  /* Smaller profile pic inside hero */
+  .hero-container .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  
   main {
     padding: 1rem;
   }
