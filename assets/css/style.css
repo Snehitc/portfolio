@@ -129,6 +129,59 @@ main {
 }
 
 
+/* ---------- Research Section Styles ---------- */
+.publication-box {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.publication-box:hover {
+  background-color: #d5d5d5;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pub-header .pub-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.pub-header .pub-title:hover {
+  text-decoration: underline;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.pub-abstract {
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 0.8rem;
+  border-radius: 5px;
+  display: none; /* hidden by default */
+}
+
+/* Dark mode adjustments */
+body.dark-theme .publication-box {
+  background-color: #2a2a2a;
+}
+
+body.dark-theme .pub-abstract {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
