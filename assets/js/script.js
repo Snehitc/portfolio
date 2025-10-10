@@ -31,3 +31,14 @@ toggle.addEventListener("click", () => {
   localStorage.setItem("theme", isDark ? "dark" : "light");
   toggle.textContent = isDark ? "🌞" : "🌙";
 });
+
+// Expandable Research Abstracts
+const publications = document.querySelectorAll(".publication-box");
+
+publications.forEach(pub => {
+  pub.addEventListener("click", () => {
+    const abstract = pub.querySelector(".pub-abstract");
+    abstract.style.display =
+      abstract.style.display === "block" ? "none" : "block";
+  });
+});
