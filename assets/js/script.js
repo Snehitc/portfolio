@@ -22,14 +22,14 @@ const darkClass = "dark-theme";
 // Load saved theme
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add(darkClass);
-  toggle.textContent = "☀︎";
+  toggle.textContent = "🔆";
 }
 
 toggle.addEventListener("click", () => {
   body.classList.toggle(darkClass);
   const isDark = body.classList.contains(darkClass);
   localStorage.setItem("theme", isDark ? "dark" : "light");
-  toggle.textContent = isDark ? "☀︎" : "⏾";
+  toggle.textContent = isDark ? "🔆" : "🔅";
 });
 
 // Expandable Research Abstracts
