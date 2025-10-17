@@ -182,6 +182,36 @@ body.dark-theme .pub-abstract {
 }
 
 
+/* ===== Education Section ===== */
+.education-item {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.education-item h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.edu-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.edu-details .college {
+  font-weight: 500;
+}
+
+.edu-details .location {
+  text-align: right;
+  font-style: italic;
+}
+
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
@@ -205,6 +235,17 @@ body.dark-theme .pub-abstract {
     width: 120px;
     height: 120px;
   }
+
+  .edu-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-details .location {
+    text-align: left;
+    margin-top: 3px;
+  }
+
   
   main {
     padding: 1rem;
