@@ -104,7 +104,27 @@ main {
 
 /* Hero text */
 .hero-text {
-  max-width: 500px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-text .intro-text {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.explore-section h4 {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.explore-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.6;
+  color: #444;
 }
 
 /* Hero buttons */
@@ -228,6 +248,10 @@ body.dark-theme .pub-abstract {
   
   .hero-container {
     flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-text {
     text-align: center;
   }
   /* Smaller profile pic inside hero */
@@ -235,7 +259,12 @@ body.dark-theme .pub-abstract {
     width: 120px;
     height: 120px;
   }
-
+  
+  .explore-list {
+    text-align: left;
+    display: inline-block;
+  }
+  
   .edu-details {
     flex-direction: column;
     align-items: flex-start;
