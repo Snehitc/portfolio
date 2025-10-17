@@ -64,10 +64,16 @@ body.dark-theme {
 }
 
 main {
-  padding: 3rem 2rem;
+  padding: 2rem;
   max-width: 900px;   /* keeps content readable */
   margin: auto;       /* centers it horizontally */
 }
+
+/* Consistent spacing below all section headings */
+main section > h2 {
+  margin-bottom: 30px;
+}
+
 
 .tab-content {
   display: none;
