@@ -271,6 +271,20 @@ body.dark-theme .pub-abstract {
     width: 120px;
     height: 120px;
   }
+
+  /* Ensure About Me heading keeps underline and alignment */
+  #about h2 {
+    border-bottom: 2px solid var(--link-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Ensure centering doesn’t stretch the underline */
+  #about .hero-text {
+    text-align: center;
+  }
   
   .explore-list {
     text-align: left;
