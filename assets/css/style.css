@@ -205,7 +205,7 @@ main section h2 {
 .pub-authors .conference {
   text-align: right;
   font-style: italic;
-  color: var(--link-color);
+  color: inherit;
   font-weight: 500;
 }
 
