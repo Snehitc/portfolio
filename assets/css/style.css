@@ -181,6 +181,7 @@ main section h2 {
   font-size: 1.1rem;
   color: var(--link-color);
   text-decoration: none;
+  text-align: justify;
 }
 
 .pub-header .pub-title:hover {
@@ -200,6 +201,7 @@ main section h2 {
   background-color: #f0f0f0;
   padding: 0.8rem;
   border-radius: 5px;
+  text-align: justify;
   display: none; /* hidden by default */
 }
 
