@@ -189,10 +189,26 @@ main section h2 {
 }
 
 .pub-authors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.9rem;
   color: #919191;
   margin-top: 0.3rem;
+  flex-wrap: wrap;
 }
+
+.pub-authors .authors {
+  text-align: left;
+}
+
+.pub-authors .conference {
+  text-align: right;
+  font-style: italic;
+  color: var(--link-color);
+  font-weight: 500;
+}
+
 
 .pub-abstract {
   margin-top: 0.7rem;
