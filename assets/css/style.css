@@ -6,7 +6,7 @@ body {
   --card-bg: #ffffff;
   --link-color: #0066cc;
 
-  font-family: 'Courier New', Arial, sans-serif;
+  font-family: Consolas, Arial, sans-serif;
   margin: 0;
   background: var(--bg-color);
   color: var(--text-color);
