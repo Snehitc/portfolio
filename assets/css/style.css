@@ -177,6 +177,7 @@ main section h2 {
 }
 
 .pub-header .pub-title {
+  font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 1.1rem;
   color: var(--link-color);
@@ -203,6 +204,7 @@ main section h2 {
 }
 
 .pub-authors .conference {
+  font-family: Arial, sans-serif;
   text-align: right;
   font-style: italic;
   color: inherit;
@@ -211,6 +213,7 @@ main section h2 {
 
 
 .pub-abstract {
+  font-family: Arial, sans-serif;
   margin-top: 0.7rem;
   font-size: 0.95rem;
   color: #333;
