@@ -264,6 +264,70 @@ body.dark-theme .pub-abstract {
 }
 
 
+
+/* ===== Contact / Social Links ===== */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Brand-specific colors (default / light mode) */
+.social-links a.linkedin i {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.social-links a.github i {
+  color: #24292e; /* GitHub dark gray */
+}
+
+.social-links a.scholar i {
+  color: #4285f4; /* Google blue */
+}
+
+.social-links a.leetcode i {
+  color: #f89f1b; /* LeetCode orange */
+}
+
+.social-links a.kaggle i {
+  color: #20beff; /* Kaggle blue */
+}
+
+/* Hover color transition - follow your theme’s link color */
+.social-links a:hover i {
+  transform: scale(1.2);
+  color: var(--link-color);
+}
+
+/* Dark mode adjustments */
+body.dark-theme .social-links a.github i {
+  color: #f5f5f5; /* Lighter GitHub icon */
+}
+
+body.dark-theme .social-links a.linkedin i {
+  color: #4da6ff;
+}
+
+body.dark-theme .social-links a.scholar i {
+  color: #5ea0ff;
+}
+
+body.dark-theme .social-links a.leetcode i {
+  color: #f9b13c;
+}
+
+body.dark-theme .social-links a.kaggle i {
+  color: #74d6ff;
+}
+
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   body {
