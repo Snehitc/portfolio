@@ -269,6 +269,8 @@ body.dark-theme .pub-abstract {
   body {
     font-family: 'JetBrains Mono', Consolas, Arial, sans-serif;
   }
+  .pub-abstract {
+  font-family: Arial, sans-serif;
   
   .header {
     flex-direction: column;
