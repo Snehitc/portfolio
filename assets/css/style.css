@@ -327,6 +327,25 @@ body.dark-theme .social-links a.kaggle i {
   color: #74d6ff;
 }
 
+/* Default link color (for light mode) */
+#contact a {
+  color: #0077cc;  /* your current blue, or any preferred color */
+  text-decoration: none;
+}
+
+/* Hover effect — same for both modes */
+#contact a:hover {
+  color: var(--link-color-hover, #3399ff);
+  text-decoration: underline;
+}
+
+/*  Dark mode adjustment */
+@media (prefers-color-scheme: dark) {
+  #contact a {
+    color: #66b2ff;  /* lighter blue for dark backgrounds */
+  }
+}
+
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
