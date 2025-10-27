@@ -269,7 +269,7 @@ body.dark-theme .pub-abstract {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   body {
-    font-family: 'JetBrains Mono', Consolas, Arial, sans-serif !important;
+    font-family: 'JetBrains Mono', Consolas, Arial, sans-serif;
   }
   
   .header {
