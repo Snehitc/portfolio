@@ -185,6 +185,7 @@ body.dark-theme .profile-ring {
 
 .hero .btn:hover, 
 .hero-buttons .btn:hover {
+  transform: scale(1.2);
   opacity: 0.9;
 }
 
