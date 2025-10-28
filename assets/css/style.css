@@ -294,6 +294,72 @@ body.dark-theme .pub-abstract {
 
 
 
+/* ===== Skills Section ===== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 3 per row on desktop */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.skill-category h3 {
+  color: var(--link-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 2px solid var(--link-color);
+  padding-bottom: 0.3rem;
+}
+
+.skill {
+  margin-bottom: 0.8rem;
+}
+
+.skill span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  border-radius: 10px;
+  transition: width 0.8s ease;
+}
+
+/* Dark mode adjustments */
+body.dark-theme .skill-category {
+  background: #1e1e1e;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+}
+
+body.dark-theme .progress-bar {
+  background: #333;
+}
+
+
+
 /* ===== Contact / Social Links ===== */
 .social-links {
   display: flex;
