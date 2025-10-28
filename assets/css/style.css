@@ -105,9 +105,16 @@ main section h2 {
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 20%;
   display: block;
   background-color: #fff; /* optional: gives clean inner border */
+}
+
+@media (prefers-color-scheme: dark) {
+  .profile-ring {
+    background: linear-gradient(135deg, #339cff, #66ccff);
+    box-shadow: 0 0 10px rgba(102, 204, 255, 0.4);
+  }
 }
 
 
