@@ -92,19 +92,24 @@ main section h2 {
 
 
 /* Profile picture */
+/* Outer ring container */
+.profile-ring {
+  background: linear-gradient(135deg, #007bff, #00c6ff); /* blue gradient ring */
+  border-radius: 50%;
+  padding: 6px; /* thickness of the ring */
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3); /* soft glow */
+}
+
+/* Profile picture */
 .profile-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   display: block;
-  padding: 4px; /* space for the gradient ring */
-  background: linear-gradient(135deg, #007bff, #00c6ff);
+  background-color: #fff; /* optional: gives clean inner border */
 }
 
-.profile-pic img {
-  border-radius: 50%;
-  display: block;
-}
 
 /* Hero container */
 .hero-container {
