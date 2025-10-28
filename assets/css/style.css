@@ -120,12 +120,11 @@ main section h2 {
 
 
 
-@media (prefers-color-scheme: dark) {
-  .profile-ring {
-    background: linear-gradient(135deg, #339cff, #66ccff);
-    box-shadow: 0 0 10px rgba(102, 204, 255, 0.4);
-  }
+body.dark-theme .profile-ring {
+  background: linear-gradient(135deg, #339cff, #66d1ff);
+  box-shadow: 0 0 12px rgba(102, 209, 255, 0.4);
 }
+
 
 
 /* Hero container */
