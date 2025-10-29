@@ -124,6 +124,11 @@ main section h2 {
   100% { box-shadow: 0 0 10px rgba(0, 150, 255, 0.3); }
 }
 
+.profile-ring,
+.profile-inner,
+.profile-pic {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .profile-ring:hover {
   animation: pulse-glow 1.5s infinite ease-in-out;
   transform: scale(1.1);
