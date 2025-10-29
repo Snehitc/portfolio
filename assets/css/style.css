@@ -319,6 +319,85 @@ body.dark-theme .pub-abstract {
 
 
 
+
+/* ---------- Projects Section ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Dark theme */
+body.dark-theme .project-card {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+}
+body.dark-theme .project-card:hover {
+  box-shadow: 0 6px 15px rgba(255,255,255,0.15);
+}
+
+/* Title */
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--link-color, #007bff);
+  text-decoration: none;
+}
+.project-title:hover {
+  text-decoration: underline;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0 0.8rem 0;
+}
+.badges img {
+  height: 24px;
+  border-radius: 6px;
+}
+
+/* Description */
+.project-description {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+body.dark-theme .project-description {
+  color: #ddd;
+}
+
+/* Project image */
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+
+
+
 /* ===== Skills Section ===== */
 .skills-container {
   display: grid;
