@@ -118,11 +118,17 @@ main section h2 {
   display: block;
 }
 
-.profile-ring:hover,
-.profile-inner:hover,
-..profile-pic:hover {
-  transform: scale(1.2);
+.profile-ring,
+.profile-inner,
+.profile-pic {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-ring:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.6);
+}
+
 
 body.dark-theme .profile-ring {
   background: linear-gradient(135deg, #339cff, #66d1ff);
