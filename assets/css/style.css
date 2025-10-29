@@ -197,11 +197,12 @@ body.dark-theme .profile-ring {
   background: var(--link-color);
   color: white;
   text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero .btn:hover, 
 .hero-buttons .btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 0.9;
 }
 
