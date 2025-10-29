@@ -254,6 +254,12 @@ body.dark-theme .profile-ring {
 /* Dark mode adjustments */
 body.dark-theme .publication-box {
   background-color: #2a2a2a;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-theme .publication-box:hover {
+  background-color: #3B3B3B; /* lighter shade for hover */
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
 }
 
 body.dark-theme .pub-abstract {
@@ -261,10 +267,6 @@ body.dark-theme .pub-abstract {
   color: #e0e0e0;
 }
 
-body.publication-box:hover {
-  background-color: #3B3B3B;
-  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
-}
 
 
 /* ===== Education Section ===== */
