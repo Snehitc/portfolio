@@ -118,7 +118,11 @@ main section h2 {
   display: block;
 }
 
-
+.profile-ring:hover,
+.profile-inner:hover,
+..profile-pic:hover {
+  transform: scale(1.2);
+}
 
 body.dark-theme .profile-ring {
   background: linear-gradient(135deg, #339cff, #66d1ff);
@@ -258,9 +262,10 @@ body.dark-theme .publication-box {
 }
 
 body.dark-theme .publication-box:hover {
-  background-color: #3B3B3B; /* lighter shade for hover */
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+  background-color: #3f3f3f;
+  box-shadow: 0 0 10px rgba(100, 180, 255, 0.2);
 }
+
 
 body.dark-theme .pub-abstract {
   background-color: #333;
