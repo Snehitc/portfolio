@@ -267,6 +267,7 @@ body.dark-theme .profile-ring {
   border-radius: 5px;
   text-align: justify;
   display: none; /* hidden by default */
+  cursor: text;
 }
 
 /* Dark mode adjustments */
