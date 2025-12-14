@@ -36,9 +36,24 @@ toggle.addEventListener("click", () => {
 const publications = document.querySelectorAll(".publication-box");
 
 publications.forEach(pub => {
+  const abstract = pub.querySelector(".pub-abstract");
+
+  // Toggle abstract when clicking the box
   pub.addEventListener("click", () => {
-    const abstract = pub.querySelector(".pub-abstract");
-    abstract.style.display =
-      abstract.style.display === "block" ? "none" : "block";
+    const isOpen = abstract.style.display === "block";
+
+    // Optional: close all other abstracts
+    document.querySelectorAll(".pub-abstract").forEach(a => {
+      a.style.display = "none";
+    });
+
+    // Toggle current one
+    abstract.style.display = isOpen ? "none" : "block";
+  });
+
+  // Prevent clicks inside abstract from collapsing it
+  abstract.addEventListener("click", (event) => {
+    event.stopPropagation();
   });
 });
+
