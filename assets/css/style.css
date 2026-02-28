@@ -290,6 +290,11 @@ body.dark-theme .profile-ring {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+.abstract-image img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
 /* Dark mode adjustments */
 body.dark-theme .publication-box {
   background-color: #2a2a2a;
