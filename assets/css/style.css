@@ -270,31 +270,6 @@ body.dark-theme .profile-ring {
   cursor: text;
 }
 
-.abstract-content {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.abstract-text {
-  flex: 2;
-}
-
-.abstract-image {
-  flex: 1;
-}
-
-.abstract-image img {
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.abstract-image img:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-}
-
 /* Dark mode adjustments */
 body.dark-theme .publication-box {
   background-color: #2a2a2a;
@@ -658,14 +633,6 @@ body.dark-theme .social-links a.kaggle i {
   
  .pub-abstract {
     font-family: Arial, sans-serif;
-  }
-
-  .abstract-content {
-    flex-direction: column;
-  }
-
-  .abstract-image {
-    margin-top: 15px;
   }
 
   main {
