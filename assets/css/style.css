@@ -92,6 +92,13 @@ main section h2 {
 
 
 
+/* Profile section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Profile picture */
 .profile-ring {
   background: linear-gradient(135deg, #007bff, #00c6ff); /* blue gradient ring */
