@@ -207,6 +207,33 @@ body.dark-theme .profile-ring {
   opacity: 0.9;
 }
 
+/* CV Button */
+.cv-button-container {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #e63946; /* PDF red */
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-button i {
+  font-size: 1rem;
+}
+
+.cv-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
 
 /* ---------- Research Section Styles ---------- */
 .publication-box {
