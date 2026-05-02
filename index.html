@@ -16,6 +16,9 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <script data-goatcounter="https://snehitc.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 </head>
 <body>
   <!-- Header -->
@@ -25,25 +28,10 @@
       <ul>
         <li><button class="tab-link active" data-tab="about">About</button></li>
         <li><button class="tab-link" data-tab="education">Education</button></li>
-        <li><button class="tab-link" data-tab="research">Research</button></li>
-        <li>
-          <button class="tab-link" data-tab="projects"
-            onclick="goatcounter.count({ path: 'tab_projects' })">
-            Projects
-          </button>
-          
-          <button class="tab-link" data-tab="research"
-            onclick="goatcounter.count({ path: 'tab_research' })">
-            Research
-          </button>
-          
-          <button class="tab-link" data-tab="contact"
-            onclick="goatcounter.count({ path: 'tab_contact' })">
-            Contact
-          </button>
-        </li>
+        <li><button class="tab-link" data-tab="research"onclick="goatcounter.count({ path: 'tab_research' })">Research</button></li>
+        <li><button class="tab-link" data-tab="projects" onclick="goatcounter.count({ path: 'tab_projects' })">Projects</button></li>
         <li><button class="tab-link" data-tab="skills">Skills</button></li>
-        <li><button class="tab-link" data-tab="contact">Contact</button></li>
+        <li><button class="tab-link" data-tab="contact" onclick="goatcounter.count({ path: 'tab_contact' })">Contact</button></li>
       </ul>
     </nav>
     <button id="theme-toggle" class="theme-toggle">🔅</button>
